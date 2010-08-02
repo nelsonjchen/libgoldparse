@@ -1,15 +1,17 @@
 package com.mindflakes.libgoldparse;
 
-/**
- * Created by IntelliJ IDEA.
- * User: nelson
- * Date: Jul 20, 2010
- * Time: 12:02:42 AM
- */
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
 public class GoldParse {
     private GoldParse(){}
 
-    public static GoldSchedule parse() {
+    public GoldSchedule parse(String html) {
+        Document doc = Jsoup.parse(html);
         return new GoldSchedule();  
+    }
+    
+    public boolean valid(){
+    	return true;
     }
 }
