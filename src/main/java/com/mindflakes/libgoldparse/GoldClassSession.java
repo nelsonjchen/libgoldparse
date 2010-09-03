@@ -1,6 +1,6 @@
 package com.mindflakes.libgoldparse;
 
-public class GoldClassTime {
+public class GoldClassSession {
 	
 	
 	public String toString(){
